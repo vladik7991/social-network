@@ -1,0 +1,26 @@
+.header {
+    grid-area: h;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+}
+
+.header img {
+    width: 40px;
+    margin: 10px;
+}
+
+.loginBlock {
+    float: right;
+    color: white;
+    font-size: 1.1em;
+    margin: 10px;
+
+}
+.loginBlock a {
+    color: white;
+}
+.loginBlock:hover{
+    font-weight: bold;
+    transition: 0.3s;
+} 
+

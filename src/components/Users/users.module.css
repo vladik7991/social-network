@@ -1,0 +1,45 @@
+.userPhoto {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 0 30px;
+}
+
+.selectedPage {
+    font-weight: bold;
+    color: gold;
+}
+button{
+    border-radius: 30px;
+    margin-left: 45px;
+    color: white;
+    background-color: orange;
+    font-size: 1.2em;
+    border: 1px solid white;   
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.descriptionUser div{
+    margin-left: 45px;
+    color: white;
+}
+textarea{
+    border-radius: 30px;
+    background-color: white;
+    width: 150px; 
+    height: 40px;
+    outline: none;
+    resize : none;
+    overflow : auto;
+    font-size: 15px;
+}
+.DigitsUsers{
+    margin: 15px;
+    color: white;
+    font-size: 1.2em;
+
+}
+.DigitsUsers span{
+    padding-right: 3px;
+}
