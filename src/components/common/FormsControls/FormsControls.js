@@ -1,23 +1,19 @@
 import React from "react";
 import styles from "./FormsControls.module.css";
-import {required} from "../validators/validators";
+import {required} from "../../../utils/validators/validators";
 import {Field} from "redux-form";
 
 const FormControl = ({input, meta: {touched, error}, children}) => {
     const hasError = touched && error;
-    // Если элемент тронут + ошибка
     return (
         <div className={styles.formControl + " " + (hasError ? styles.error : "")}>
             <div>
                 {children}
-                {/* Здесь может быть кто угодно */}
             </div>
             {hasError && <span>{error}</span>}
-            {/* Текст сообщения сидит в error */}
         </div>
     )
 }
-// Избегаем повторения кода
 
 export const Textarea = (props) => {
     const {input, meta, child, ...restProps} = props;

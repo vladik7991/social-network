@@ -6,10 +6,8 @@ import {connect} from "react-redux";
 import {login} from "../../redux/auth-reducer";
 import {Redirect} from "react-router-dom";
 import style from "./../common/FormsControls/FormsControls.module.css"
-import styles from './login.module.css';
 
 const LoginForm = ({handleSubmit, error, captchaUrl}) => {
-        // Деструктуризация props
     return (
         <form onSubmit={handleSubmit}>
             {createField("Email", "email", [required], Input)}
@@ -24,7 +22,6 @@ const LoginForm = ({handleSubmit, error, captchaUrl}) => {
                 {error}
             </div>
             }
-            {/* При возникновении ошибки */}
             <div>
                 <button>Login</button>
             </div>
@@ -53,6 +50,4 @@ const mapStateToProps = (state) => ({
     isAuth: state.auth.isAuth
 })
 
-export default connect(mapStateToProps, {login}
-    // Ссылка на ThunkCreator(диспатчит вызов ThunkCreator)
-    )(Login);
+export default connect(mapStateToProps, {login})(Login);
